@@ -3,7 +3,7 @@ import Clips from "./utils/Clips";
 import SocialLink from "./utils/SocialLinks";
 
 const Hero = ({
-  heroapi: { title, subtitle, btntext, img, sociallinks, videos },
+  heroapi: { title, subtitle, , img, sociallinks, videos },
 }) => {
   return (
     <>
