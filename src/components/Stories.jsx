@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "./utils/Title";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
