@@ -1,10 +1,12 @@
 import CartCount from "./cart/CartCount";
+import CartEmpty from "./cart/CartEmpty";
 
 const Cart = () => {
   return <div>
     <div>
       <CartCount />
-      <CartEm
+      <CartEmpty />
+      <CartIt
     </div>
   </div>;
 };
