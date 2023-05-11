@@ -1,5 +1,12 @@
-
-import { FlexContent, Footer, Hero, Navbar, Sales, Stories, Cart } from "./components";
+import {
+  FlexContent,
+  Footer,
+  Hero,
+  Navbar,
+  Sales,
+  Stories,
+  Cart,
+} from "./components";
 import {
   heroapi,
   popularsales,
