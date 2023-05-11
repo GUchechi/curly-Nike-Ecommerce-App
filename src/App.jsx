@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FlexContent, Footer, Hero, Navbar, Sales, Stories, Cart } from "./components";
 import {
   heroapi,
