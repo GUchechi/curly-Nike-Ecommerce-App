@@ -1,5 +1,12 @@
+import CartCount from "./cart/CartCount";
+
 const Cart = () => {
-  return <div>Cart</div>;
+  return <div>
+    <div>
+      <CartCount />
+      <CartEm
+    </div>
+  </div>;
 };
 
 export default Cart;
