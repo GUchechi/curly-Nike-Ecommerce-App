@@ -21,7 +21,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      {/* <Cart /> */}
+      <Cart />
       <main className="flex flex-col gap-16 relative">
         <Hero heroapi={heroapi} />
         <Sales endpoint={popularsales} ifExists />
