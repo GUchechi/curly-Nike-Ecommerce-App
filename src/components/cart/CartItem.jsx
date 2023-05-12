@@ -5,9 +5,11 @@ const CartItem = ({
 }) => {
   return (
     <>
-      <div>
-        <div>
-          <div>
+      <div className="flex items-center justify-between w-full px-5">
+        <div className="flex items-center gap-5">
+          <div
+            className={`bg-gradient-to-b ${color} ${shadow} relative rounded p-3 hover:scale-105 transition-all duration-75 ease-in-out items-center grid`}
+          >
             <img
               src={img}
               alt={`img/cart-item/${id}`}
