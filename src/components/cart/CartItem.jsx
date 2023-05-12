@@ -1,8 +1,11 @@
+import { useDispatch } from "react-redux";
 import { MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 
 const CartItem = ({
   item: { id, title, text, img, color, shadow, price, cartQuantity },
 }) => {
+  const dispatch = useDispatch();
+
   return (
     <>
       <div className="flex items-center justify-between w-full px-5">
