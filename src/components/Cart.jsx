@@ -44,6 +44,19 @@ const Cart = () => {
                   <CartItem key={i} item={item} />
                 ))}
               </div>
+
+              <div>
+                <div>
+                  <h1>SubTotal</h1>
+                  <h1>000</h1>
+                </div>
+                <div>
+                  <p>Shipping Fees will be included</p>
+                  <button type="button" className="">
+                    Check Out
+                  </button>
+                </div>
+              </div>
             </div>
           )}
         </div>
