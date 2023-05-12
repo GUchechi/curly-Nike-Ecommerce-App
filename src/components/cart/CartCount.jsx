@@ -17,8 +17,11 @@ const CartCount = () => {
             </h1>
           </div>
         </div>
-        <div>
-          <button type="button">
+        <div className="flex items-center">
+          <button
+            type="button"
+            className="rounded bg-theme-cart active:scale-90 p-0.5"
+          >
             <XMarkIcon className="h-5 w-5" />
           </button>
         </div>
