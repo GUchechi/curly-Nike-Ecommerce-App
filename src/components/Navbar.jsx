@@ -13,9 +13,11 @@ const Navbar = () => {
   const [navState, setNavState] = useState(false);
 
   const onCartToggle = () => {
-    setOpenCart(() => {
-      cartState: true;
-    });
+    dispatch(
+      setOpenCart({
+        cartState: true,
+      })
+    );
   };
 
   const onNavScroll = () => {
