@@ -1,8 +1,18 @@
+import { useDispatch } from "react-redux";
 import CartCount from "./cart/CartCount";
 import CartEmpty from "./cart/CartEmpty";
 import CartItem from "./cart/CartItem";
 
 const Cart = () => {
+  const dispatch = useDispatch;
+
+  const onCartToggle = () => {
+    dispatch(
+      setOpenCart({
+        cartState: false,
+      })
+    );
+  };
   return (
     <>
       <div
@@ -11,7 +21,7 @@ const Cart = () => {
         <div
           className={`blur-effect-theme h-screen max-w-xl w-full absolute right-0`}
         >
-          <CartCount />
+          <CartCount onCartToggle={onCartToggle} />
           <CartEmpty />
           <CartItem />
         </div>
