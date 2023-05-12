@@ -6,7 +6,7 @@ const CartCount = () => {
       <div>
         <div>
           <div>
-            <ChevronDoubleLeftIcon />
+            <ChevronDoubleLeftIcon className="h-5 w-5" />
           </div>
           <div>
             <h1>
@@ -16,7 +16,7 @@ const CartCount = () => {
         </div>
         <div>
           <button type="button">
-            <XMarkIcon />
+            <XMarkIcon className="h-5 w-5" />
           </button>
         </div>
       </div>
