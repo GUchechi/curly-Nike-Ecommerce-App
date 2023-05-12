@@ -16,14 +16,16 @@ const CartItem = ({
               className="w-36 h-auto object-fill lg:w-28"
             />
           </div>
-          <div>
-            <div>
-              <h1>{title}</h1>
-              <p>{text}</p>
+          <div className="grid items-center gap-4">
+            <div className="grid items-center leading-none">
+              <h1 className="font-medium text-lg text-slate-900 lg:text-sm">
+                {title}
+              </h1>
+              <p className="text-sm text-slate-800 lg:text-xs">{text}</p>
             </div>
-            <div>
-              <button type="button">
-                <MinusIcon className="w-5 h-5" />
+            <div className="flex items-center justify-around w-full">
+              <button type="button" className="bg-theme-cart rounded">
+                <MinusIcon className="w-5 h-5 lg:w-4 lg:h-4 text-white stroke-[2]" />
               </button>
 
               <div>{cartQuantity}</div>
