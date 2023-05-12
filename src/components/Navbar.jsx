@@ -1,13 +1,22 @@
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import {
   HeartIcon,
   MagnifyingGlassIcon,
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.png";
+import { setOpenCart } from "../app/CartSlice";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
   const [navState, setNavState] = useState(false);
+
+  const onCartToggle = () => {
+    setOpenCart(() => {
+      cartState: true;
+    });
+  };
 
   const onNavScroll = () => {
     if (window.scrollY > 30) {
@@ -73,6 +82,7 @@ const Navbar = () => {
                       ? "bg-slate-900 text-slate-100 shadow-slate-900"
                       : "bg-slate-100 text-slate-900 shadow-slate-100"
                   }`}
+                  onClick={onCartToggle}
                 >
                   0
                 </div>
