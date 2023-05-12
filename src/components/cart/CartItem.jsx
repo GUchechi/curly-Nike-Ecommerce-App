@@ -8,7 +8,11 @@ const CartItem = ({
       <div>
         <div>
           <div>
-            <img src={img} alt={`img/cart-item/${id}`} />
+            <img
+              src={img}
+              alt={`img/cart-item/${id}`}
+              className="w-36 h-auto object-fill lg:w-28"
+            />
           </div>
           <div>
             <div>
