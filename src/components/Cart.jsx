@@ -45,8 +45,8 @@ const Cart = () => {
                 ))}
               </div>
 
-              <div>
-                <div>
+              <div className="fixed bottom-0 bg-white w-full px-5 py-2 grid items-center">
+                <div className=" flex items-center justify-between">
                   <h1>SubTotal</h1>
                   <h1>000</h1>
                 </div>
