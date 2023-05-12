@@ -44,7 +44,7 @@ const CartSlice = createSlice({
       state.cartItems = removeItem;
       localStorage.setItem("cart", JSON.stringify(state.cartItems));
 
-      toast.success(`${action.payload.title} added to Cart`);
+      toast.success(`${action.payload.title} removed from Cart`);
     },
   },
 });
