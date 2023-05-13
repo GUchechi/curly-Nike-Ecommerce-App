@@ -5,16 +5,26 @@ import CartItem from "./cart/CartItem";
 import {
   selectCartItems,
   selectCartState,
+  selectTotalAmount,
+  selectTotalQTY,
   setClearCartItems,
   setCloseCart,
+  setGetTotals,
 } from "../app/CartSlice";
+import { useEffect } from "react";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const ifCartState = useSelector(selectCartState);
   const cartItems = useSelector(selectCartItems);
+  const totalAMount = useSelector(selectTotalAmount);
+  const totalQTY = useSelector(selectTotalQTY);
 
-  console.log(cartItems);
+  // console.log(cartItems);
+
+  useEffect(() => {
+    dispatch(setGetTotals);
+  }, [cartItems, dispatch]);
 
   const onCartToggle = () => {
     dispatch(
