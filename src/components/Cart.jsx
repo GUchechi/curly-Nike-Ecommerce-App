@@ -5,6 +5,7 @@ import CartItem from "./cart/CartItem";
 import {
   selectCartItems,
   selectCartState,
+  setClearCartItems,
   setCloseCart,
 } from "../app/CartSlice";
 
@@ -22,6 +23,11 @@ const Cart = () => {
       })
     );
   };
+
+  const onClearCartItems = () => {
+    dispatch(setClearCartItems())
+  }
+  
   return (
     <>
       <div
