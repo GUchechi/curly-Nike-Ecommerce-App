@@ -58,6 +58,9 @@ export const {
   setCloseCart,
   setAddItemToCart,
   setRemoveItemFromCart,
+  setIncreaseItemQTY,
+  setDecreaseItemQTY,
+  setClearCartItems,
 } = CartSlice.actions;
 
 export const selectCartState = (state) => state.cart.cartState;
