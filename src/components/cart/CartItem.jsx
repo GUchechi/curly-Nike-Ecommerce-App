@@ -40,6 +40,8 @@ const CartItem = ({
       })
     );
   };
+
+  
   const onDecreaseItemQTY = () => {
     dispatch(
       setDecreaseItemQTY({
