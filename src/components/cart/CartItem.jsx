@@ -1,6 +1,10 @@
 import { useDispatch } from "react-redux";
 import { MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
-import { setIncreaseItemQTY, setRemoveItemFromCart } from "../../app/CartSlice";
+import {
+  setDecreaseItemQTY,
+  setIncreaseItemQTY,
+  setRemoveItemFromCart,
+} from "../../app/CartSlice";
 
 const CartItem = ({
   item: { id, title, text, img, color, shadow, price, cartQuantity },
@@ -36,7 +40,20 @@ const CartItem = ({
       })
     );
   };
-  const onDecreaseItemQTY = () => {};
+  const onDecreaseItemQTY = () => {
+    dispatch(
+      setDecreaseItemQTY({
+        id,
+        title,
+        text,
+        img,
+        color,
+        shadow,
+        price,
+        cartQuantity,
+      })
+    );
+  };
 
   return (
     <>
