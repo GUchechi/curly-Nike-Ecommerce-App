@@ -23,7 +23,7 @@ const Cart = () => {
   // console.log(cartItems);
 
   useEffect(() => {
-    dispatch(setGetTotals);
+    dispatch(setGetTotals());
   }, [cartItems, dispatch]);
 
   const onCartToggle = () => {
@@ -53,6 +53,7 @@ const Cart = () => {
           <CartCount
             onCartToggle={onCartToggle}
             onClearCartItems={onClearCartItems}
+            totalQTY={totalQTY}
           />
           {cartItems?.length === 0 ? (
             <CartEmpty onCartToggle={onCartToggle} />
@@ -70,7 +71,7 @@ const Cart = () => {
                     SubTotal
                   </h1>
                   <h1 className="text-sm rounded bg-theme-cart text-slate-100 px-1 scroll-py-0.5">
-                    000
+                    ${totalAMount}
                   </h1>
                 </div>
                 <div className="grid items-center gap-2">
