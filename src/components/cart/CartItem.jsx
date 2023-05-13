@@ -7,7 +7,7 @@ const CartItem = ({
 }) => {
   const dispatch = useDispatch();
 
-  const onRemove = () => {
+  const onRemoveItem = () => {
     dispatch(
       setRemoveItemFromCart({
         id,
@@ -73,7 +73,7 @@ const CartItem = ({
             <button
               type="button"
               className="bg-theme-cart rounded p-1 lg:p-0.5 grid items-center justify-items-center cursor-pointer"
-              onClick={onRemove}
+              onClick={onRemoveItem}
             >
               <TrashIcon className="w-5 h-5 text-white" />
             </button>
