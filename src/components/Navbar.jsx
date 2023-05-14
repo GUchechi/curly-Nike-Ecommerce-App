@@ -21,7 +21,13 @@ const Navbar = () => {
     );
   };
 
-
+  const onNavScroll = () => {
+    if (window.scrollY > 30) {
+      setNavState(true);
+    } else {
+      setNavState(false);
+    }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", onNavScroll);
