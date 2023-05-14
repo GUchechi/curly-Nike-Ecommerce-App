@@ -1,25 +1,7 @@
 import { StarIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 import { useDispatch } from "react-redux";
 import { setAddItemToCart, setOpenCart } from "../../app/CartSlice";
-const Items = ({
-  ifExists,
-  id,
-  color,
-  shadow,
-  title,
-  text,
-  img,
-  btn,
-  rating,
-  price,
-}) => {
-  const dispatch = useDispatch();
 
-  const onAddToCart = () => {
-    const item = { id, color, shadow, title, text, img, price };
-
-    dispatch(setAddItemToCart(item));
-  };
 
   const onCartToggle = () => {
     dispatch(
