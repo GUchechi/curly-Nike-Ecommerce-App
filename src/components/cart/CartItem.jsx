@@ -41,20 +41,7 @@ const CartItem = ({
     );
   };
 
-  const onDecreaseItemQTY = () => {
-    dispatch(
-      setDecreaseItemQTY({
-        id,
-        title,
-        text,
-        img,
-        color,
-        shadow,
-        price,
-        cartQuantity,
-      })
-    );
-  };
+ 
 
   return (
     <>
