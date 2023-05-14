@@ -38,7 +38,16 @@ const CartSlice = createSlice({
 
       localStorage.setItem("cart", JSON.stringify(state.cartItems));
     },
-    
+    setRemoveItemFromCart: (state, action) => {
+      const removeItem = state.cartItems.filter(
+        (item) => item.id !== action.payload.id
+      );
+
+      state.cartItems = removeItem;
+      localStorage.setItem("cart", JSON.stringify(state.cartItems));
+
+      toast.success(`${action.payload.title} removed from Cart`);
+    },
 
     setIncreaseItemQTY: (state, action) => {
       const itemIndex = state.cartItems.findIndex(
