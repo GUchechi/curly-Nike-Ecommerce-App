@@ -80,26 +80,7 @@ const CartSlice = createSlice({
       localStorage.setItem("cart", JSON.stringify(state.cartItems));
     },
 
-    setGetTotals: (state, action) => {
-      let { totalAmount, totalQTY } = state.cartItems.reduce(
-        (cartTotal, cartItem) => {
-          const { price, cartQuantity } = cartItem;
-          const totalPrice = price * cartQuantity;
-
-          cartTotal.totalAmount += totalPrice;
-          cartTotal.totalQTY += cartQuantity;
-
-          return cartTotal;
-        },
-        {
-          totalAmount: 0,
-          totalQTY: 0,
-        }
-      );
-
-      state.cartTotalAmount = totalAmount;
-      state.cartTotalQuantity = totalQTY;
-    },
+   
   },
 });
 
