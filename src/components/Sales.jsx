@@ -13,7 +13,7 @@ const Sales = ({ ifExists, endpoint: { title, items } }) => {
               : "grid-cols-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1"
           }`}
         >
-          {items.map((item, i) => (
+          {items?.map((item, i) => (
             <Items {...item} key={i} ifExists={ifExists} />
           ))}
         </div>
