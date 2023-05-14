@@ -34,7 +34,9 @@ const Cart = () => {
     );
   };
 
-
+  const onClearCartItems = () => {
+    dispatch(setClearCartItems());
+  };
 
   return (
     <>
