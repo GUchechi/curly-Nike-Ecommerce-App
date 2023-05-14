@@ -29,7 +29,13 @@ const Navbar = () => {
     }
   };
 
- 
+  useEffect(() => {
+    window.addEventListener("scroll", onNavScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onNavScroll);
+    };
+  }, []);
 
   return (
     <>
