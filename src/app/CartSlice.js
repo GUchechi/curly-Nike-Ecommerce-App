@@ -117,6 +117,7 @@ export const {
 export const selectCartState = (state) => state.cart.cartState;
 export const selectCartItems = (state) => state.cart.cartItems;
 
-
+export const selectTotalAmount = (state) => state.cart.cartTotalAmount;
+export const selectTotalQTY = (state) => state.cart.cartTotalQuantity;
 
 export default CartSlice.reducer;
