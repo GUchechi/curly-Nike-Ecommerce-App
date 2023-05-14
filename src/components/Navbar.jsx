@@ -13,7 +13,13 @@ const Navbar = () => {
   const [navState, setNavState] = useState(false);
   const totalQTY = useSelector(selectTotalQTY);
 
- 
+  const onCartToggle = () => {
+    dispatch(
+      setOpenCart({
+        cartState: true,
+      })
+    );
+  };
 
   const onNavScroll = () => {
     if (window.scrollY > 30) {
