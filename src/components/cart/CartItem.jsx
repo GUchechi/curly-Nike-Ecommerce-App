@@ -26,20 +26,7 @@ const CartItem = ({
     );
   };
 
-  const onIncreaseItemQTY = () => {
-    dispatch(
-      setIncreaseItemQTY({
-        id,
-        title,
-        text,
-        img,
-        color,
-        shadow,
-        price,
-        cartQuantity,
-      })
-    );
-  };
+ 
 
   const onDecreaseItemQTY = () => {
     dispatch(
