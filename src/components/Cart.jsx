@@ -26,7 +26,13 @@ const Cart = () => {
     dispatch(setGetTotals());
   }, [cartItems, dispatch]);
 
- 
+  const onCartToggle = () => {
+    dispatch(
+      setCloseCart({
+        cartState: false,
+      })
+    );
+  };
 
   const onClearCartItems = () => {
     dispatch(setClearCartItems());
