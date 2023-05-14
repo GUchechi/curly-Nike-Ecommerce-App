@@ -21,7 +21,13 @@ const Items = ({
     dispatch(setAddItemToCart(item));
   };
 
-
+  const onCartToggle = () => {
+    dispatch(
+      setOpenCart({
+        cartState: true,
+      })
+    );
+  };
 
   return (
     <>
