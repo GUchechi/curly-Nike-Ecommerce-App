@@ -20,8 +20,6 @@ const Cart = () => {
   const totalAMount = useSelector(selectTotalAmount);
   const totalQTY = useSelector(selectTotalQTY);
 
-  // console.log(cartItems);
-
   useEffect(() => {
     dispatch(setGetTotals());
   }, [cartItems, dispatch]);
