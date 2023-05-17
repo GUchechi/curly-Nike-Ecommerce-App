@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CartCount from "./cart/CartCount";
 import CartEmpty from "./cart/CartEmpty";
@@ -11,7 +12,6 @@ import {
   setCloseCart,
   setGetTotals,
 } from "../app/CartSlice";
-import { useEffect } from "react";
 
 const Cart = () => {
   const dispatch = useDispatch();
