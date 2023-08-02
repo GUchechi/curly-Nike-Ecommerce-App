@@ -7,7 +7,7 @@ const CartCount = ({ onCartToggle, onClearCartItems, totalQTY }) => {
         <div className="flex items-center gap-3">
           <div
             className="grid items-center cursor-pointer"
-            onClick={onCartToggle}
+            onClick={onCartToggle} 
           >
             <ChevronDoubleLeftIcon className="h-5 w-5 text-slate-900 hover:text-blue-500 stroke-[2]" />
           </div>
